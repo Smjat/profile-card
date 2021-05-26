@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet');
+
+*{
+  margin: 0;
+  padding:0;
+  font-family: "PT+Sans";
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+body{
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: rgb(206, 10, 10);
+}
+
+img{
+  height: 200px;
+  width: 225px;
+  border-radius: 90px;
+  margin: 15px 45px;
+}
+
+.greeting{
+  place-content: center;
+}
+
+h1{
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 2.5px;
+  color: rgb(206, 10, 10);
+
+}
+
+p{
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.button{
+  margin-left: 5px;
+  padding: 7px 14px;
+  border: none;
+  background-color: rgb(238, 215, 13);
+  color:rgb(206, 10, 10);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.button:hover{
+  background-color: rgb(247, 25, 9);
+  color:rgb(238, 215, 13);
+}
+
+.counter{
+  margin-left: 75px;
+}
+
+.like-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.like-container img{
+  width: 36px;
+  height: 36px;
+}
+
+.icon{
+  width: 60px;
+  height: 60px;
+  margin: 13px;
+  margin-top: 0;
+}
+
+.icons{
+  width: 35px;
+  height: 35px;
+  margin: 0px;
+  margin-bottom: 26.5px;
+}
+
+@media screen and (min-width:375px){
+
+
+}
