@@ -1,4 +1,8 @@
 import {useState} from "react";
+import Pikachu2 from "./images/Pikachu2.png";
+import Heart from "./images/HeartBeat.png";
+import LinkedIn from "./images/LinkedIn.png";
+import Twitter from "./images/Twitter.png";
 
 function App() {
 
@@ -19,9 +23,9 @@ function App() {
 
   return (
     <div className="App">
-
+      <div className="container">
         <div className="photo">
-          <img src="/images/Pikachu2.png" alt="PikachuWaving"/>
+          <img src={Pikachu2} alt="PikachuWaving"/>
         </div>
 
         <div className="greeting">
@@ -29,21 +33,21 @@ function App() {
           <p>{paragraph}</p>
         </div>
 
-        <div className="btn-container">
-          <button onClick={handleName} className="button">Name</button>
-          <buttonn onClick={handleSkills} className="button">Skills</buttonn>
+        <div className="buttons">
+          <button onClick={handleName} className="btn">Name</button>
+          <buttonn onClick={handleSkills} className="btn">Skills</buttonn>
         </div>
 
-        <div className="like-container">
+        <div className="likes">
           <div className="counter">{count}</div>
-          <img src="/images/Heart.png" alt="Heart" onClick={counter}/>
+          <img className="heart" src={Heart} alt="Heart" onClick={counter}/>
         </div>
 
         <div className="socials">
-          <a href="https://www.linkedin.com/in/pikachu-pikachu-5638a118a?trk=people-guest_people_search-card" target="blank"><img className="icon" src="/images/LinkedIn.png" alt="Pikachu LnkedIn Profile"></img></a>
-          <a href="https://twitter.com/piiiikaachu?lang=en" target="blank"><img className="icons" src="/images/Twitter.png" alt="Pikachu Twitter Profile"></img></a>
+          <a href="https://twitter.com/piiiikaachu?lang=en" target="blank"><img className="twitter" src={Twitter} alt="Pikachu Twitter Profile"></img></a>
+          <a href="https://www.linkedin.com/in/pikachu-pikachu-5638a118a?trk=people-guest_people_search-card" target="blank"><img className="linkedin" src={LinkedIn} alt="Pikachu LnkedIn Profile"></img></a>
         </div>
-
+      </div>
         
     </div>
   );
